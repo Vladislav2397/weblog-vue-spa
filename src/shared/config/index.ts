@@ -26,9 +26,10 @@ const getEnvVar = (key: string) => {
 // export const isProdEnv = getEnvVar("PROD"); // Vite feature
 
 export const ENV = {
-    API_KEY: getEnvVar('FIREBASE_API_KEY'),
-    AUTH_DOMAIN: getEnvVar('FIREBASE_AUTH_DOMAIN'),
-    STORAGE_BUCKET: getEnvVar('FIREBASE_STORAGE_BUCKET'),
-    MESSAGING_SENDER_ID: getEnvVar('FIREBASE_MESSAGING_SENDER_ID'),
-    APP_ID: getEnvVar('FIREBASE_APP_ID'),
+    API_KEY: getEnvVar('VUE_APP_FIREBASE_API_KEY'),
+    AUTH_DOMAIN: getEnvVar('VUE_APP_FIREBASE_AUTH_DOMAIN'),
+    STORAGE_BUCKET: getEnvVar('VUE_APP_FIREBASE_STORAGE_BUCKET'),
+    MESSAGING_SENDER_ID: getEnvVar('VUE_APP_FIREBASE_MESSAGING_SENDER_ID'),
+    APP_ID: getEnvVar('VUE_APP_FIREBASE_APP_ID'),
+    NODE_ENV: getEnvVar('NODE_ENV'),
 }

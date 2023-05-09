@@ -1,5 +1,7 @@
 import Vue from 'vue'
 
+import './firebase'
+
 import { providers } from '../shared/lib'
 import getOs from '../shared/lib/utils/other/getOs'
 
