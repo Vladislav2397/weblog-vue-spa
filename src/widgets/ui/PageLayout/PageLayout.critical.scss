@@ -1,0 +1,23 @@
+.page-layout {
+    padding-top: 24px;
+
+    &__container {
+        padding: 0 16px;
+        max-width: 900px;
+        margin: 0 auto;
+
+        &--size {
+            &-s {
+                max-width: 650px;
+            }
+
+            &-m {
+                max-width: 900px;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+}
