@@ -18,5 +18,9 @@
 
     &__item {
         text-decoration: none;
+
+        & + & {
+            margin-left: 12px;
+        }
     }
 }

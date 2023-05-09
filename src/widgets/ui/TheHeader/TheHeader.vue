@@ -9,10 +9,14 @@
             tag="a"
             to="/articles"
         ) Blog
+        button.__item(
+            @click="onClickAuth"
+        ) Try auth google
 
 </template>
 
 <script lang="ts">
+import { authByGoogle } from '@/features/auth/by-google'
 import { Component, Vue } from 'vue-property-decorator'
 
 export type TheHeaderProps = {
@@ -21,7 +25,7 @@ export type TheHeaderProps = {
 
 @Component
 export default class TheHeader extends Vue {
-    //
+    onClickAuth = authByGoogle
 }
 </script>
 
