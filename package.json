@@ -1,7 +1,28 @@
 {
-    "name": "weblog-vue-spa",
-    "version": "0.1.0",
+    "name": "weblog",
+    "description": "WebLog - Example website for test skils. Build with Vue2 SPA",
+    "author": " Vladislav",
+    "contributors": [
+        {
+            "email": "valdiszz53@gmail.com",
+            "name": "Vladislav",
+            "url": "https://github.com/Vladislav2397"
+        }
+    ],
+    "displayName": "WebLog",
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "WebLog",
+        "skils",
+        "example",
+        "vue ssr"
+    ],
     "private": true,
+    "version": "0.1.0",
+    "main": "server.js",
+    "license": "ISC",
     "scripts": {
         "dev": "npm run serve",
         "serve": "vue-cli-service serve",
