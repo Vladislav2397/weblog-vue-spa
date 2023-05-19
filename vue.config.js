@@ -2,10 +2,11 @@ const { defineConfig } = require('@vue/cli-service')
 const path = require('path')
 
 const isProd = process.env.NODE_ENV === 'production'
+const isGithubPagesProd = process.env.HOSTING === 'github-pages'
 
 module.exports = defineConfig({
     transpileDependencies: true,
-    publicPath: isProd ? '/weblog-vue-spa/' : '/',
+    publicPath: isGithubPagesProd && isProd ? '/weblog-vue-spa/' : '/',
 
     pages: {
         index: {
