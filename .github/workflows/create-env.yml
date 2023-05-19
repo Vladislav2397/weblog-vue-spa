@@ -11,7 +11,7 @@ jobs:
               uses: SpicyPizza/create-envfile@v1.3
               with:
                   envkey_VUE_APP_FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
-                  envkey_VUE_APP_FIREBASE_AUTH_DOMAIN: ${{ secretes.FIREBASE_AUTH_DOMAIN }}
+                  envkey_VUE_APP_FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
                   envkey_VUE_APP_FIREBASE_STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
                   envkey_VUE_APP_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
                   envkey_VUE_APP_FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
