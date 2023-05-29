@@ -9,6 +9,14 @@ export type Article = {
     content: string
 }
 
+export type UserID = BrandedType<string>
+export type User = {
+    id: UserID
+    email: string
+    role: string
+    name: string
+}
+
 export type CommentId = BrandedType<number>
 export type Comment = {
     id: CommentId

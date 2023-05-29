@@ -1,5 +1,5 @@
 export type ArticleItem = {
-    id: number
+    id: string
     title: string
     description: string
     image: {
@@ -14,5 +14,5 @@ export type ArticleDetail = ArticleItem & {
 
 export type ArticleApi = {
     getArticles(): Promise<{ articles: { data: ArticleItem[] } }>
-    getArticle(id: number): Promise<{ article: ArticleDetail }>
+    getArticle(id: string): Promise<{ article: ArticleDetail }>
 }

@@ -17,9 +17,13 @@ const scrollLock = () =>
         'scroll-lock'
     )
 
-scrollLock().then(response => {
-    Vue.prototype.$scrollLock = response.default
-})
+scrollLock()
+    .then(response => {
+        Vue.prototype.$scrollLock = response.default
+    })
+    .catch(error => {
+        console.error(error)
+    })
 
 Vue.prototype.$os = getOs()
 
