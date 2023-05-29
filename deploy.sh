@@ -4,7 +4,7 @@
 set -e
 
 # сборка
-npm run build
+npm run deploy:github-pages
 
 # переход в каталог сборки
 cd dist

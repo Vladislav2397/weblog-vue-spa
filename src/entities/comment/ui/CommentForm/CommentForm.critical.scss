@@ -1,0 +1,26 @@
+.comment-form {
+    display: flex;
+    align-items: flex-start;
+
+    &__field {
+        flex-grow: 1;
+        resize: vertical;
+        max-height: 100px;
+        min-height: 44px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    &__button {
+        border: none;
+        background-color: #ccc;
+        padding: 12px 16px;
+        margin-left: 8px;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}

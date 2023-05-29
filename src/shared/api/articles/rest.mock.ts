@@ -23,7 +23,7 @@ const articles = new Map([
     [
         '1',
         {
-            id: 1,
+            id: '1',
             title: 'title 1',
             description: 'description',
             image: {
@@ -39,7 +39,7 @@ const articles = new Map([
     [
         '2',
         {
-            id: 2,
+            id: '2',
             title: 'title 2',
             description: 'description',
             image: {
@@ -53,7 +53,7 @@ const articles = new Map([
     [
         '3',
         {
-            id: 3,
+            id: '3',
             title: 'title 3',
             description: 'description',
             image: {

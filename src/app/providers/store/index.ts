@@ -1,11 +1,18 @@
 import Vue from 'vue'
 import Vuex, { type StoreOptions } from 'vuex'
 import { articleApi } from '@/shared/api/articles'
+import type { Article } from '@/shared-kernel'
 
 Vue.use(Vuex)
 
+// Add types
 export type StateRoot = {
-    //
+    modules: {
+        articles: {
+            list: Article[]
+            active: null
+        }
+    }
 }
 
 const store: StoreOptions<StateRoot> = {

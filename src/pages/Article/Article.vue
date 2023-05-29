@@ -17,6 +17,10 @@
         .__content.text(
             v-html="article.content"
         )
+        comment-form.__form
+        comment-list.__list(
+            :articleId="article.id"
+        )
 
 </template>
 
@@ -25,6 +29,8 @@ import { Component, Vue } from 'vue-property-decorator'
 // @ts-ignore
 import MarkdownIt from 'markdown-it'
 import { PageLayout } from '@/widgets/ui/PageLayout'
+import { CommentForm } from '@/entities/comment'
+import { CommentList } from '@/widgets/comment'
 
 export type ArticleProps = {
     //
@@ -33,6 +39,8 @@ export type ArticleProps = {
 @Component({
     components: {
         'page-layout': PageLayout,
+        'comment-form': CommentForm,
+        'comment-list': CommentList,
     },
 })
 export default class Article extends Vue {
